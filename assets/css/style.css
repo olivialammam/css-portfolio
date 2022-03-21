@@ -52,7 +52,7 @@ header nav a {
 }
 
 /* Container holding the image and the text */
-.container {
+.container, .container1 {
     position: relative;
   }
   
@@ -73,3 +73,10 @@ header nav a {
       border: 5px solid #ab88c2;
   }
 
+  .row {
+    display: flex; 
+  }
+  
+h2 {
+    text-align: left;
+}
