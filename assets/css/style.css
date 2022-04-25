@@ -5,23 +5,25 @@
 body{
     width: 100%;
     font-family: Tahoma, Verdana, sans-serif;
-    background-color: #fefaff;
+    background-color: #ffffff;
 }
 
 /* Header Section Styling  */
 header  {
-    background-color: gray;
-    color: white;
+    background-color: #3b084d;
+    color: darkgray;
     display: flex; 
     flex-direction: row;
     flex: wrap;
     font-family: Tahoma, Verdana, sans-serif;
 }
 header h1 {
-    background-color: black;
+    background-color: #3b084d;
     color: white;
     width:30%;
-    padding: 10px; 
+    padding: 10px;
+    border-radius: 25px; 
+    text-shadow: 0px 4px 10px rgba(179, 147, 211, 0.8)
 }
 header nav {
     display: flex; 
@@ -38,6 +40,12 @@ header nav a {
     float: right; 
 }
 
+.about-form {
+    background-color: #e8e1e1;
+    color: black;
+    padding: 10px 20px;
+  }
+
 
 /* Work Section Styling  */
 .avatar{
@@ -45,7 +53,7 @@ header nav a {
     height: 100px; 
 }
 
-.picture, .dress {
+.picture, .dress , .anilogo {
     width: 350px; 
     height: 300px; 
     border: 5px solid #ab88c2;
@@ -79,4 +87,95 @@ header nav a {
   
 h2 {
     text-align: left;
+}
+
+.contact-form {
+    background-color: #e8e1e1;
+    color: black;
+    padding: 10px 20px;
+  }
+
+
+/* Footer Styling */
+
+
+footer{
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b084d;
+    height: auto;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: 0px 4px 10px rgba(179, 147, 211, 0.8)
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.footer-bottom{
+    background: #3b084d;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:#a9adad
+   font-size 16px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+
+ .footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #a9adad;
+  }
+
+  @media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    } 
 }
